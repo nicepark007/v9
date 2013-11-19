@@ -1,0 +1,17 @@
+body {
+	margin:0;
+	background-color:#000;
+}
+#gamescreen {
+
+	background-color:#ddd;
+
+	/*화면 중앙에 위치하도록 설정 */
+	position:absolute; 
+	float:left;	
+	top:50%;
+	left:50%;
+	margin-top:-320px;
+	margin-left:-480px;	
+}
+
