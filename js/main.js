@@ -35,6 +35,8 @@ imghero.src = 'images/hero.png';
 var imgsword = new Image();
 imgsword.src = 'images/sword.png';
 
+var stage =  new Image();
+stage.src = 'images/stage.png'; //플레이어 이미지
 var mx;
 var my;
 
@@ -65,8 +67,6 @@ function start(){ //캔버스 레이아웃 설정
 	ctx.fillStyle = "rgba(50,50,50,1)";
 	ctx.fillRect (0, 0, 80, 640);
 	//stage
-	stage = new Image(); //플레이어 이미지 삽입
-	stage.src = 'images/stage.png'; //플레이어 이미지
 	ctx.fillStyle = "rgba(200,200,200,1)";
     ctx.drawImage(stage,80,0,canvas_width,canvas_height);
     //sound
@@ -278,7 +278,8 @@ function gameover() {
  		ctx.fillRect (0, 0, 960, 640);
  		ctx.font="30px Arial";
  		ctx.fillStyle = "rgba(255,255,255,0.5)";
-		ctx.fillText("GAME OVER",385,310);
+ 		ctx.textAlign="center"; 
+		ctx.fillText("GAME OVER",480,310);
 
 };
 
